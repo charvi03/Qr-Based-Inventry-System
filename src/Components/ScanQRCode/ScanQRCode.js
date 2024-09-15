@@ -86,7 +86,7 @@ const ScanQRCode = ({ onCloseModal, fetchItems }) => {
     if (qrCodeData) {
       try {
         const response = await axios.post(
-          "http://localhost:5000/api/items/scanQR",
+          "https://qr-based-inventry-system.onrender.com/api/items/scanQR",
           {
             qrCodeData,
           }
