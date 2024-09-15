@@ -1,0 +1,126 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a569bd;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  width: 90%;
+  max-width: 600px;
+  height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px #a569bd;
+  position: relative;
+  text-align: center;
+}
+
+h2 {
+  color: #a569bd;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.file-upload-section {
+  margin-top: 1.5rem;
+}
+
+label {
+  font-weight: 500;
+  margin-right: 10px;
+  color: #a569bd;
+}
+
+input[type="file"] {
+  padding: 0.5rem;
+  border: 1px solid #a569bd;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+  background-color: #a569bd;
+}
+
+.error {
+  color: #ff5a5f;
+  background-color: #ffe6e6;
+  border: 1px solid #ff5a5f;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+.result {
+  color: #4caf50;
+  background-color: #e6ffe6;
+  border: 1px solid #a569bd;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #a569bd;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #a569bd;
+}
+
+button:hover {
+  background-color: #a569bd;
+}
+
+.qr-preview {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  width: 320px;
+  height: 240px;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .qr-preview {
+    width: 100%;
+    height: auto;
+  }
+}
